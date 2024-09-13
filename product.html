@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product </title>
+     <!-- font aswome  -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!-- normalize css  -->
+     <link rel="stylesheet" href="css/normalize.css">
+     
+     <!-- responsive degin  -->
+     <link rel="stylesheet" href="css/responsive.css">
+     <!-- bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <!-- link jquary  -->
+     <script src="js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js"></script>
+ 
+     <!-- style css  -->
+     <link rel="stylesheet" href="css/main.css">
+   <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+ 
+  <link rel="stylesheet" href="css/product.css">
+
+
+
+</head>
+<body>
+    
+    <!-- start header  -->
+
+  <section class="header">
+ 
+    <div class="header-top">
+    <div class="container">
+        <div class="h-left">
+          <a href="sell-on-btech.html">بيع علي بي تك</a>
+          <a href="tel:19966">
+            <i class="fa-solid fa-phone"></i>
+            اتصل علي 19966
+          </a>
+        </div>
+        <div class="h-right">
+          <div class="delivery" href="#">
+          
+            <span>القاهرة</span>
+            <span class="color-ddd"> : منطقة التوصيل </span>
+          </div>
+          <a href="#">
+            English
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container sr">
+
+
+      <div class="h-b-left">
+
+        <div class="sales">
+          <a href="checkout.html">مشترياتي 
+            <!-- <i class="fa-regular fa-cart-shopping"></i> -->
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+  
+  
+  
+  
+  
+        <div class="acount">
+          
+  <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+    <a style="cursor: pointer;" onclick="document.getElementById('id01').style.display='block'">
+      حسابي
+      <i class="fa-regular fa-user"></i>
+    </a>
+  
+  <div id="id01" class="modal">
+<!--     
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form> -->
+    <div class="form animated bounceInDown">
+      
+<div class="flip-box ">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <div class="front">
+            <h1 class="title log">Login</h1>
+            <form>
+                        <input type="text" placeholder="Username" /><br>
+                        <input type="password" placeholder="Password" /><br>
+                        <input class="btn r-btn" type="button" value="Login"/>
+            </form>
+            <a class="flipbutton" id="loginButton" href="#" onclick="change(1);">Create my account →</a>
+        </div>
+        
+    </div>
+    <div class="flip-box-back">
+      
+	<div class="back">
+		<h1 class="title">Register</h1>
+		<form>
+				<input type="text" placeholder="Username" /><br>
+        <input type="text" placeholder="phone" /><br>
+				<input type="email" placeholder="Email" /><br>
+				<input type="password" placeholder="Password" /><br>
+				<input type="password" placeholder="conforim Password" /><br>
+				<input class="btn r-btn" type="button" value="Sign up"/>
+		</form>
+		<a class="flipbutton" id="registerButton"  href="#" onclick="change(0)">Login to my account →</a>
+	</div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+  </div>
+    
+        </div>
+  
+  
+      </div>
+
+
+
+      <div class="serach">
+
+        <div class="container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="form-control" id="listSearch" type="text" placeholder="Type something to search list items">
+          <br>
+          <ul class="list-group" id="myList">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth item</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+        <div class="h-b-c-right">
+
+          <a class="color-danger" href="#">عروض كل يوم</a>
+
+          <ul class="category">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle menu" data-toggle="dropdown">فئات <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                  <!-- <li><a href="#">Level 1</a></li>       -->
+
+                  <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">موبايل و تابلت</a>
+                      <img class="image-size" src="image/Mobiles_and_tablets.webp" alt="">
+                      <!-- Level 2 -->
+                      <ul class="dropdown-menu">
+                          <li class="submm"><a href="#">Level 2</a></li>                                    
+                          <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                              <!-- Level 3 -->
+                             
+                          </li>
+                      </ul>
+                  </li>
+
+
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> تلفزيونات</a>
+                    <img class="image-size" src="image/TV_Entertainment.webp" alt="">
+                    <!-- Level 2 -->
+                    <ul class="dropdown-menu">
+                        <li class="submm"><a href="#">Level 2</a></li>                                    
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                            <!-- Level 3 -->
+                           
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">اجهزة منزلية صغيرة</a>
+                  <img class="image-size" src="image/small_hope_appliances.webp" alt="">
+                  <!-- Level 2 -->
+                  <ul class="dropdown-menu">
+                      <li class="submm"><a href="#">Level 2</a></li>                                    
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                          <!-- Level 3 -->
+                         
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">اجهزة منزلية كبيرة</a>
+                <img class="image-size" src="image/Large_home_appliance.webp" alt="">
+                <!-- Level 2 -->
+                <ul class="dropdown-menu">
+                    <li class="submm"><a href="#">Level 2</a></li>                                    
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                        <!-- Level 3 -->
+                       
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">لاب توب و كمبيوتر</a>
+              <img class="image-size" src="image/Laptops_PCs.webp" alt="">
+              <!-- Level 2 -->
+              <ul class="dropdown-menu">
+                  <li class="submm"><a href="#">Level 2</a></li>                                    
+                  <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                      <!-- Level 3 -->
+                     
+                  </li>
+              </ul>
+          </li>
+
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">اداوت العناية الشخصية</a>
+            <img class="image-size" src="image/Beauty_Fitness.webp" alt="">
+            <!-- Level 2 -->
+            <ul class="dropdown-menu">
+                <li class="submm"><a href="#">Level 2</a></li>                                    
+                <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                    <!-- Level 3 -->
+                   
+                </li>
+            </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">الكترونيات</a>
+          <img class="image-size" src="image/electronics.webp" alt="">
+          <!-- Level 2 -->
+          <ul class="dropdown-menu">
+              <li class="submm"><a href="#">Level 2</a></li>                                    
+              <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                  <!-- Level 3 -->
+                 
+              </li>
+          </ul>
+      </li>
+
+      <li class="dropdown-submenu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> العاب</a>
+        <img class="image-size" src="image/gaming_1.webp" alt="">
+        <!-- Level 2 -->
+        <ul class="dropdown-menu">
+            <li class="submm"><a href="#">Level 02</a></li>                                    
+            <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 02</a>
+                <!-- Level 3 -->
+               
+            </li>
+        </ul>
+    </li>
+
+
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">رياضة</a>
+                  <img class="image-size" src="image/ezgif-1-3533adc29e.webp" alt="">
+                  <!-- Level 2 -->
+                  <ul class="dropdown-menu">
+                      <li class="submm"><a href="#">Level 2</a></li>                                    
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                          <!-- Level 3 -->
+                         
+                      </li>
+                  </ul>
+              </li>
+
+
+
+              </ul>
+          </li>       
+
+
+
+          </ul>
+    
+
+        </div>
+     
+
+        <a href="index.html">
+          
+     <img src="image/new3.webp" alt="logo" class="logo">
+        </a>
+
+
+        
+
+     <i class="fa-solid fa-bars toggle" onclick="openNav()"></i>
+    </div>
+  </div>
+
+    
+  </section>
+  <!-- end header  -->
+
+<!-- navbar side  -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+
+
+<section class="slider-pro">
+  <div class="container">
+    <div class="container mt-10">
+                            		
+
+                            	
+                               
+      <div class="row">
+<div class="col-md-4 col-sm-6">
+<div class="card mb-30"><a class="card-img-tiles" href="ditalis.html" data-abc="true">
+<div class="inner">
+<div class="main-img"><img src="image/product/0jO40CF.jpg" alt="Category"></div>
+<div class="thumblist"><img src="image/product/dWYAg41.jpg" alt="Category"><img src="image/product/5oQEZSC.jpg" alt="Category"></div>
+</div></a>
+<div class="card-body text-center">
+<h4 class="card-title">Accessories</h4>
+<p class="text-muted">Starting from $9</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">View Products</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="card mb-30"><a class="card-img-tiles" href="ditalis.html" data-abc="true">
+<div class="inner">
+<div class="main-img"><img src="image/product/2kePJmX.jpg" alt="Category"></div>
+<div class="thumblist"><img src="image/product/ILEU18M.jpg" alt="Category"><img src="image/product/O0GMYuw.jpg" alt="Category"></div>
+</div></a>
+<div class="card-body text-center">
+<h4 class="card-title">Laptops</h4>
+<p class="text-muted">Starting from $499</p><a class="btn btn-outline-primary btn-sm" href="ditalis.html" data-abc="true">View Products</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="card mb-30"><a class="card-img-tiles" href="ditalis.html" data-abc="true">
+<div class="inner">
+<div class="main-img"><img src="image/product/uRgdVY1.jpg" alt="Category"></div>
+<div class="thumblist"><img src="image/product/gTvZ2H5.jpg" alt="Category"><img src="image/product/VwSKS7A.jpg" alt="Category"></div>
+</div></a>
+<div class="card-body text-center">
+<h4 class="card-title">Mobiles</h4>
+<p class="text-muted">Starting from $50</p><a class="btn btn-outline-primary btn-sm" href="ditalis.html" data-abc="true">View Products</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+  <section class="product">
+  <div class="container">
+    <div class="row">
+        <div class="col-10">
+          
+<!--           
+<div class="container">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars">Ford</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+
+
+
+</div> -->
+
+
+<div class="text-center container py-5">
+  <!-- <h4 class="mt-0 mb-5"><strong>Bestsellers</strong></h4> -->
+
+  <div class="row">
+    
+  <!-- <div class="row"> -->
+    <div class="col-lg-4 col-md-12 mb-4 filterDiv cars">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5><span class="badge bg-primary ms-2">New</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">$61.99</h6>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="col-lg-4 col-md-12 mb-4 filterDiv cars">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5><span class="badge bg-primary ms-2">New</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="ditalis.html" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">$61.99</h6>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="col-lg-4 col-md-12 mb-4 filterDiv colors">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5><span class="badge bg-primary ms-2">New</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="ditalis.html" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">$61.99</h6>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="col-lg-4 col-md-12 mb-4 filterDiv fruits">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5><span class="badge bg-primary ms-2">New</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="ditalis.html" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">$61.99</h6>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="col-lg-4 col-md-6 mb-4 filterDiv cars">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5><span class="badge bg-success ms-2">Eco</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="ditalis.html" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">$61.99</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4 filterDiv animals">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="ditalis.html" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">
+            <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+  <!-- </div> -->
+
+  <!-- <div class="row"> -->
+
+    <div class="col-lg-4 col-md-12 mb-4 filterDiv animals">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5>
+                  <span class="badge bg-success ms-2">Eco</span><span
+                    class="badge bg-danger ms-2">-10%</span>
+                </h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="ditalis.html" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">
+            <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4 filterDiv animals">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100"></div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">$61.99</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4 filterDiv animals">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
+            class="w-100" />
+          <a href="ditalis.html">
+            <div class="mask">
+              <div class="d-flex justify-content-start align-items-end h-100">
+                <h5>
+                  <span class="badge bg-primary ms-2">New</span><span
+                    class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                </h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+        <div class="card-body">
+          <a href="" class="text-reset">
+            <h5 class="card-title mb-3">Product name</h5>
+          </a>
+          <a href="" class="text-reset">
+            <p>Category</p>
+          </a>
+          <h6 class="mb-3">
+            <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+  <!-- </div> -->
+
+  </div>
+
+</div>
+
+
+        </div>
+        <div class="col-2 fliter-c">
+
+
+          
+<div class="btn-f" id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
+
+
+
+        </div>
+       </div>
+  </div>
+  </section>
+
+
+<!-- 
+
+  <section style="background-color: #eee;">
+    <div class="text-center container py-5">
+      <h4 class="mt-4 mb-5"><strong>Bestsellers</strong></h4>
+  
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+                class="w-100" />
+              <a href="ditalis.html">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-primary ms-2">New</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">$61.99</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                class="w-100" />
+              <a href="ditalis.html">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">$61.99</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">
+                <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span class="badge bg-success ms-2">Eco</span><span
+                        class="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">
+                <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+              data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100"></div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">$61.99</h6>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
+                class="w-100" />
+              <a href="#!">
+                <div class="mask">
+                  <div class="d-flex justify-content-start align-items-end h-100">
+                    <h5>
+                      <span class="badge bg-primary ms-2">New</span><span
+                        class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                    </h5>
+                  </div>
+                </div>
+                <div class="hover-overlay">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </div>
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="" class="text-reset">
+                <h5 class="card-title mb-3">Product name</h5>
+              </a>
+              <a href="" class="text-reset">
+                <p>Category</p>
+              </a>
+              <h6 class="mb-3">
+                <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+
+
+
+ 
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <!-- <span>Get connected with us on social networks:</span> -->
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="container text-end f-text">
+      <a href="tel:19966">
+        <h2>اتصل بنا</h2>
+        19966
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-end">
+            <i class="fas me-3 text-secondary"></i>بضمان بي تك
+          </h6>
+          <p class="text-end">
+            <a href="https://btech.com/ar/daily-deals/ultra.html">الترا</a>
+            <a href="https://btech.com/ar/daily-deals/ariston.html">أريستون</a>
+            <a href="https://btech.com/ar/daily-deals/indesit.html">إنديست</a>
+            <a href="https://btech.com/ar/daily-deals/babyliss.html">بيبي ليس</a>
+            <a href="https://btech.com/ar/daily-deals/miele.html">ميلا</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            عن بي.تك
+          </h6>
+          <p>
+            <a href="#" class="text-reset">اعمل معنا</a>
+          </p>
+          <p>
+            <li href="ditalis.html" class="text-reset" style="font-weight: bold;">خدمات بي تك</li>
+          </p>
+          <p>
+            <a href="minicash-info.html" class="text-reset">تقسيط الميني كاش</a>
+          </p>
+          <p>
+            <a href="t-care.html" class="text-reset">TECH CARE</a>
+          </p>
+          <p>
+            <a href="blog.html" class="text-reset">BLOG</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            عليه طلب
+          </h6>
+          <p>
+            <a href="ditalis.html" class="text-reset">عروض كل يوم</a>
+          </p>
+          <p>
+            <a href="ditalis.html" class="text-reset">الموبايل</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">عروض براون</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">تلفزيونات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">اكسسوارات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">أوبو</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">سامسونج</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">ابل</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">تواصل معنا</h6>
+          <p class="social-m">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>   
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>   
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>   
+
+          </p>
+          <p>
+            نزّل تطبيق بي.تك
+          </p>
+          <p class="d-flex app">
+            <a href="#">
+              <img src="image/sell/IOS.avif" alt="">
+            </a>
+            <a href="#">
+              <img src="image/sell/Google.avif" alt="">
+            </a>
+            <a href="#">
+              <img src="image/sell/Huawei.avif" alt="">
+            </a>
+
+            
+            </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://btech.com/">Btech</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+  <!-- slider pro  -->
+
+
+
+
+
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+    
+  
+<!-- bootstrap js  -->
+<script src="js/bootstrap.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+<!-- main js  -->
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

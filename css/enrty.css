@@ -1,0 +1,19 @@
+section.header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+.header .container img{
+    width: 170px;
+}
+.info{
+    direction: rtl;
+}
+
+label{
+    padding: 10px;
+    font-weight: 900;
+    font-size: 20px;
+}

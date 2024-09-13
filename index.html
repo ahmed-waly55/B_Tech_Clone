@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B TECH</title>
+    <!-- font aswome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normalize css  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- responsive degin  -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- bootstrap css  -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- link jquary  -->
+    <script src="js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js"></script>
+
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+
+<style>
+  .active-s{
+    color: white !important;
+  }
+  .op-fixed a{
+    font-size: 16px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f94625;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+</style>
+    
+</head>
+<body>
+
+<!-- start header  -->
+
+  <section class="header">
+ 
+    <div class="header-top">
+    <div class="container">
+        <div class="h-left">
+          <a href="sell-on-btech.html">بيع علي بي تك</a>
+          <a href="tel:19966">
+            <i class="fa-solid fa-phone"></i>
+            اتصل علي 19966
+          </a>
+        </div>
+        <div class="h-right">
+          <div class="delivery" href="#">
+          
+            <span>القاهرة</span>
+            <span class="color-ddd"> : منطقة التوصيل </span>
+          </div>
+          <a href="#">
+            English
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container sr">
+
+
+      <div class="h-b-left">
+
+        <div class="sales">
+          <a href="checkout.html">مشترياتي 
+            <!-- <i class="fa-regular fa-cart-shopping"></i> -->
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+  
+  
+  
+  
+  
+        <div class="acount">
+          
+  <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+    <a style="cursor: pointer;" onclick="document.getElementById('id01').style.display='block'">
+      حسابي
+      <i class="fa-regular fa-user"></i>
+    </a>
+  
+  <div id="id01" class="modal">
+<!--     
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form> -->
+    <div class="form animated bounceInDown">
+      
+<div class="flip-box ">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <div class="front">
+            <h1 class="title log">Login</h1>
+            <form>
+                        <input type="text" placeholder="Username" /><br>
+                        <input type="password" placeholder="Password" /><br>
+                        <input class="btn r-btn" type="button" value="Login"/>
+            </form>
+            <a class="flipbutton" id="loginButton" href="#" onclick="change(1);">Create my account →</a>
+        </div>
+        
+    </div>
+    <div class="flip-box-back">
+      
+	<div class="back">
+		<h1 class="title">Register</h1>
+		<form>
+				<input type="text" placeholder="Username" /><br>
+        <input type="text" placeholder="phone" /><br>
+				<input type="email" placeholder="Email" /><br>
+				<input type="password" placeholder="Password" /><br>
+				<input type="password" placeholder="conforim Password" /><br>
+				<input class="btn r-btn" type="button" value="Sign up"/>
+		</form>
+		<a class="flipbutton" id="registerButton"  href="#" onclick="change(0)">Login to my account →</a>
+	</div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+  </div>
+    
+        </div>
+  
+  
+      </div>
+
+
+
+      <div class="serach">
+
+        <div class="container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="form-control" id="listSearch" type="text" placeholder="Type something to search list items">
+          <br>
+          <ul class="list-group" id="myList">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth item</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+        <div class="h-b-c-right">
+
+          <a class="color-danger" href="#">عروض كل يوم</a>
+
+          <ul class="category">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle menu" data-toggle="dropdown">فئات <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                  <!-- <li><a href="#">Level 1</a></li>       -->
+
+                  <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">موبايل و تابلت</a>
+                      <img class="image-size" src="image/Mobiles_and_tablets.webp" alt="">
+                      <!-- Level 2 -->
+                      <ul class="dropdown-menu">
+                          <li class="submm"><a href="#">Level 2</a></li>                                    
+                          <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                              <!-- Level 3 -->
+                             
+                          </li>
+                      </ul>
+                  </li>
+
+
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> تلفزيونات</a>
+                    <img class="image-size" src="image/TV_Entertainment.webp" alt="">
+                    <!-- Level 2 -->
+                    <ul class="dropdown-menu">
+                        <li class="submm"><a href="#">Level 2</a></li>                                    
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                            <!-- Level 3 -->
+                           
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">اجهزة منزلية صغيرة</a>
+                  <img class="image-size" src="image/small_hope_appliances.webp" alt="">
+                  <!-- Level 2 -->
+                  <ul class="dropdown-menu">
+                      <li class="submm"><a href="#">Level 2</a></li>                                    
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                          <!-- Level 3 -->
+                         
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">اجهزة منزلية كبيرة</a>
+                <img class="image-size" src="image/Large_home_appliance.webp" alt="">
+                <!-- Level 2 -->
+                <ul class="dropdown-menu">
+                    <li class="submm"><a href="#">Level 2</a></li>                                    
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                        <!-- Level 3 -->
+                       
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">لاب توب و كمبيوتر</a>
+              <img class="image-size" src="image/Laptops_PCs.webp" alt="">
+              <!-- Level 2 -->
+              <ul class="dropdown-menu">
+                  <li class="submm"><a href="#">Level 2</a></li>                                    
+                  <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                      <!-- Level 3 -->
+                     
+                  </li>
+              </ul>
+          </li>
+
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">اداوت العناية الشخصية</a>
+            <img class="image-size" src="image/Beauty_Fitness.webp" alt="">
+            <!-- Level 2 -->
+            <ul class="dropdown-menu">
+                <li class="submm"><a href="#">Level 2</a></li>                                    
+                <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                    <!-- Level 3 -->
+                   
+                </li>
+            </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">الكترونيات</a>
+          <img class="image-size" src="image/electronics.webp" alt="">
+          <!-- Level 2 -->
+          <ul class="dropdown-menu">
+              <li class="submm"><a href="#">Level 2</a></li>                                    
+              <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                  <!-- Level 3 -->
+                 
+              </li>
+          </ul>
+      </li>
+
+      <li class="dropdown-submenu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> العاب</a>
+        <img class="image-size" src="image/gaming_1.webp" alt="">
+        <!-- Level 2 -->
+        <ul class="dropdown-menu">
+            <li class="submm"><a href="#">Level 02</a></li>                                    
+            <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 02</a>
+                <!-- Level 3 -->
+               
+            </li>
+        </ul>
+    </li>
+
+
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">رياضة</a>
+                  <img class="image-size" src="image/ezgif-1-3533adc29e.webp" alt="">
+                  <!-- Level 2 -->
+                  <ul class="dropdown-menu">
+                      <li class="submm"><a href="#">Level 2</a></li>                                    
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                          <!-- Level 3 -->
+                         
+                      </li>
+                  </ul>
+              </li>
+
+
+
+              </ul>
+          </li>       
+
+
+
+          </ul>
+    
+
+        </div>
+     
+
+        <a href="index.html">
+          
+     <img src="image/new3.webp" alt="logo" class="logo">
+        </a>
+
+
+        
+
+     <i class="fa-solid fa-bars toggle" onclick="openNav()"></i>
+    </div>
+  </div>
+
+    
+  </section>
+  <!-- end header  -->
+
+<!-- navbar side  -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+
+
+  
+<div id="myoption" class="option">
+  <div class="container">
+    
+  <a href="javascript:void(0)" class="closebtn" onclick="closeoption()">&times;</a>
+
+  </div>
+
+  <div class="row">
+    <h2 class="text-center">change slider</h2>
+    <a class="col-4 cover" style="cursor: pointer;">cover</a>
+    <a class="col-4 container-slider" style="cursor: pointer;"  >container</a>
+  </div>
+  <div class="row op-fixed">
+    <h2 class="text-center">navbar</h2>
+    <a class="col-4 n-fixed" style="cursor: pointer;">fixed</a>
+   <br> <a class="col-4 n-not-fixed" style="cursor: pointer;"  >not fixed</a>
+  </div>
+
+  <label class="switch">
+    <input type="checkbox">
+    <span class="sliderr round"></span>
+  </label>
+</div>
+
+<a style="font-size:30px;cursor:pointer" onclick="openoption()">
+  <i class="fa-solid fa-gear setting"></i>
+</a>
+  <!-- <a style="font-size:30px;cursor:pointer" onclick="openoption()">&#9776; open</a> -->
+
+
+
+
+  <!-- slider main  -->
+
+  <section class="slider animated bounceInDown">
+    
+    <div class="container sl-nav">
+      
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        <!-- <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button> -->
+        <!-- <button type="button" class="bo" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 3"></button> -->
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/b2s_ctg_ac__web-banner__2368x800_ar.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/summercampaign_2_ctg_mda__web-banner__2368x800_ar.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/b2s_ctg_laptops__web-banner__2368x800_ar.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/b2s_ctg_mobiles__web-banner__2368x800_ar.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/b2s_generic_1__web-banner__2368x800_ar.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button style="background: none; border: none;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button style="background: none; border: none;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+<!-- 
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+
+      
+    </div>
+
+
+
+    
+
+    </div>
+
+
+  </section>
+
+  <!-- slider-box -->
+
+  <section class="slider-box animated bounceInLeft">
+    <div class="container">
+      <div id="wrapper">
+        <div id="carousel">
+          <div id="content">
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/animation_200_klcf7e35.webp"
+            />
+            عروض كل يوم
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/beautyt_fitness.webp"
+            />
+            اداوت العناية الشخصية
+            </a>
+            <a href="ditalis.html" class="item">
+              <img
+              class="item"
+              src="image/slider/electronics (1).webp"
+            />
+            الكترونيات
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/gaming.webp"
+            />
+            العاب
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/lapt_pcs.webp"
+            />
+            لاب توب و كمبيوتر
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/lha.webp"
+            />
+            اجهزة منزلية كبيرة
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/mobiles_tablet.webp"
+            />
+            موبايلات
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/rtl_on.webp"
+            />
+              ميني كاش
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/sha.webp"
+            />
+            اجهزة منزلية صغيرة
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/televisions.webp"
+            />
+            تلفزيونات
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/tvartboard_1.webp"
+            />
+            عروض الصيف
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/website_category_icons__1_1_.webp"
+            />
+            اجهزة الارتداء
+            </a>
+            <a class="item">
+              <img
+              class="item"
+              src="image/slider/without.webp"
+            />
+            منتجات ابل
+            </a>
+        
+            
+          
+          </div>
+        </div>
+        <button id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+          </svg>
+        </button>
+        <button id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- cash-card -->
+
+  <section class="cash-card">
+   
+    <div class="container">
+      <img src="image/keep-minicash-ar.webp" alt="title" class="logo-t">
+      <b>
+        اشتري كل اللي نفسك فيه وسدد بمبالغ صغيرة <br>  ! كل شهر لـمدة تصل إلى 48 شهرًا 
+      </b>
+      <a class="btn-cash" href="entry_point.html">افتح حساب ميني كاش</a>
+      <a class="more-info" href="#">اعرف اكثر</a>
+    </div>
+    
+  </section>
+<!-- slider offer 1  -->
+
+  <section class="offer">
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          
+          <div class="slideroffer" id="slideri">
+            <div class="slideoffer" id="slidei">
+              <a class="itemsoffer">
+                <img src="image/offer/a03_black-1.webp" alt="offer">
+                <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+                <b>3.414 <span>جنيه</span></b>
+              </a>  
+              <a class="itemsoffer">
+                <img src="image/offer/c11_2021_blue.webp" alt="offer">
+                <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+                <b>3.414 <span>جنيه</span></b>
+              </a>  
+              <a class="itemsoffer">
+                <img src="image/offer/infinix-smart-6-32gb-2gb-black_main.webp" alt="offer">
+                <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+                <b>3.414 <span>جنيه</span></b>
+              </a>  
+              <a class="itemsoffer">
+                <img src="image/offer/infinix-smart-6-32gb-2gb-green_main.webp" alt="offer">
+                <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+                <b>3.414 <span>جنيه</span></b>
+              </a>  
+              <a href="#" class="itemsoffer">
+                <img src="image/offer/realme-c11-2021-1-1.webp" alt="offer">
+                <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+                <b>3.414 <span>جنيه</span></b>
+              </a>  
+              <a class="itemsoffer">
+                <img src="image/offer/realme-c21y-64gb-4gb-blue_1.webp" alt="offer">
+                <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+                <b>3.414 <span>جنيه</span></b>
+              </a>  
+            </div>
+            <button class="ctrl-btn pro-prev offer-btn-l ml"> < </button>
+            <button class="ctrl-btn pro-next offer-btn-r mr"> > </button>
+          </div>
+          
+
+        </div>
+      <div class="col-3 t-info">
+          <h1>اقوي العروض</h1>
+        <a href="product.html">تسوق الان</a>
+      </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- special -->
+
+  <section class="special">
+    <div class="container">
+      <h1>عروض خاصة</h1>
+      
+      <div class="special-content">
+        <div class="item-spcial">
+          <a href="product.html">
+            <img src="image/offer/61mz-zsei-uxl-ac-sl1000.webp" alt="a">
+          <br>  Xiaomi Redmi 10C Dual Sim, 64GB, 4GB RAM, 4G LTE- Ocean Blue
+          </a>
+          <br>
+          <br>
+          <span class="das">وفر 650 جنيه (16%)</span>
+          <br>
+          
+          <div class="cash-s">
+            <b>7,124,00</b>
+            <del>8,152,00</del>
+          </div>
+  
+        </div>
+  
+        <div class="item-spcial">
+          <a href="product.html">
+            <img src="image/offer/74433e1ad2be46426c3ed8c37f4ffe1ec163605ff7e930c3d8b97e0fbc0d8208.webp" alt="a">
+            <br>
+            سامسونج جالكسي A23 سعة 128 جيجا، 4 جيجا رام، بشريحتين اتصال، 4G LTE - برتقالي (اصدار محلي)
+          </a>
+
+          <br>
+          <br>
+          <span class="das">وفر 650 جنيه (16%)</span>
+          <br>
+          
+
+          <div class="cash-s">
+            <b>7,124,00</b>
+            <del>8,152,00</del>
+          </div>
+  
+        </div>
+  
+        <div class="item-spcial">
+          <a href="product.html">
+            <img src="image/offer/ama_6986.webp" alt="a">
+           <br>
+           كبة فريش، 400 وات، سعة 1.5 لتر، اسود - CH400
+          </a>
+
+          <br>
+          <br>
+          <span class="das"></span>
+          <br>
+          
+
+
+          <div class="cash-s">
+            <b>7,124,00</b>
+            <del></del>
+          </div>
+  
+        </div>
+  
+        <div class="item-spcial">
+          <a href="product.html">
+            <img src="image/offer/mienta_garment_steamer_1650_watt_black_-_gs42509a_2_.webp" alt="a"><br>
+            مكواة بخار ميانتا، 1650 وات، اسود - GS42509A
+          </a>
+          
+          <br>
+          <br>
+          <span class="das">وفر 650 جنيه (12%)</span>
+          <br>
+          
+
+
+          <div class="cash-s">
+            <b>7,124,00</b>
+            <del>8,002,00</del>
+          </div>
+  
+        </div>
+  
+        <div class="item-spcial">
+          <a href="product.html">
+            <img src="image/offer/moulinex_double_force_food_processor_1000_watt_multi_color_-_fp822_3_.webp" alt="a">
+            <br>
+            محضر طعام مولينكس دبل فورس، 1000 وات، متعدد الألوان - FP822
+          </a>
+          
+          <br>
+          <br>
+          <span class="das"></span>
+          <br>
+          
+
+
+          <div class="cash-s">
+            <b>7,124,00</b>
+            <del></del>
+          </div>
+  
+        </div>
+      </div>
+      </div>
+
+  </section>
+
+  <!-- offer-spcial -->
+<!-- 
+<section class="offer-spcial">
+  <div class="container">
+
+   ____ أفضل العروض_____
+
+
+   
+
+    
+  </div>
+
+</section>
+ -->
+
+
+
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+
+<i title="Go to top" id="myBtn" class="fa-solid fa-arrow-up" onclick="topFunction()" style="cursor: pointer;"></i>
+
+
+
+
+<!-- slider offer 2 -->
+
+<section class="offer">
+  <div class="container">
+    <div class="row change">
+      <div class="col-9">
+        
+        <div class="slideroffer" id="slidero">
+          <div class="slideoffer" id="slideo">
+            <a class="itemsoffer">
+              <img src="image/offer/a03_black-1.webp" alt="offer">
+              <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+              <b>3.414 <span>جنيه</span></b>
+            </a>  
+            <a class="itemsoffer">
+              <img src="image/offer/c11_2021_blue.webp" alt="offer">
+              <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+              <b>3.414 <span>جنيه</span></b>
+            </a>  
+            <a class="itemsoffer">
+              <img src="image/offer/infinix-smart-6-32gb-2gb-black_main.webp" alt="offer">
+              <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+              <b>3.414 <span>جنيه</span></b>
+            </a>  
+            <a class="itemsoffer">
+              <img src="image/offer/infinix-smart-6-32gb-2gb-green_main.webp" alt="offer">
+              <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+              <b>3.414 <span>جنيه</span></b>
+            </a>  
+            <a href="#" class="itemsoffer">
+              <img src="image/offer/realme-c11-2021-1-1.webp" alt="offer">
+              <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+              <b>3.414 <span>جنيه</span></b>
+            </a>  
+            <a class="itemsoffer">
+              <img src="image/offer/realme-c21y-64gb-4gb-blue_1.webp" alt="offer">
+              <p>ريلمي C11 2021 بشريحتين، 32 جيجا، رام 2 جيجا، شبكة 4G LTE - ازرق (بدون ضمان)</p>
+              <b>3.414 <span>جنيه</span></b>
+            </a>  
+          </div>
+          <button class="ctrl-btn pro-prev left-btn"> < </button>
+          <button class="ctrl-btn pro-next right-btn"> > </button>
+        </div>
+        
+
+      </div>
+    <div class="col-3 t-info">
+        <h1>عروض المينى كاش
+        </h1>
+      <a href="product.html">تسوق الان</a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- meza  -->
+
+<section class="meza">
+  <div class="container">
+    <h1 class="text-end">مزايا بي.تك</h1>
+    <br>
+      <div class="content-meza">
+        <a href="#" class="img-meza">
+          <img src="image/offer/value_propositions_rtl4_4x.webp" alt="">
+        </a>
+        <a href="t-care.html" class="img-meza">
+          <img src="image/offer/1.webp" alt="">
+        </a>
+        <a href="minicash-info.html" class="img-meza">
+          <img src="image/offer/2.webp" alt="">
+        </a>
+        <a href="#" class="img-meza">
+          <img src="image/offer/3.webp" alt="">
+        </a>
+      </div>
+  </div>
+</section>
+
+<!-- top sales 1  -->
+<!-- 
+<section class="offer-spcial">
+  <div class="container">
+
+   ____الاكثر مبيعاً____
+
+
+   
+
+    
+  </div>
+
+</section> -->
+
+<!-- brand -->
+
+<section class="brand">
+  <div class="container">
+    <!-- <h1>أشهر الماركات</h1> -->
+    <div class="marquee">
+      <ul class="marquee-content">
+        <li>
+          <a href="#">
+            <img src="image/brand/ariston.webp" alt="brand">
+          </a>
+        </li>
+       
+        <li>
+          <a href="#">
+            <img src="image/brand/babyliss.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/brands_logos_180x120__kenwood.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/brands_logos_180x120__kiriazi.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/brands_logos_180x120__mienta.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/brands_logos_180x120__toshiba.webp" alt="brand">
+          </a>
+        </li>
+       
+        <li>
+          <a href="#">
+            <img src="image/brand/brands_logos_180x120__zanussi.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/braun.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/huawei.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/indesit (1).webp" alt="brand">
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#">
+            <img src="image/brand/indesit.webp" alt="brand">
+          </a>
+        </li>
+       
+        <li>
+          <a href="#">
+            <img src="image/brand/lenovo.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/lg.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/msi-dragon_spirit_logo_h_4c_b.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/oppo.webp" alt="brand">
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#">
+            <img src="image/brand/samsung.webp" alt="brand">
+          </a>
+        </li>
+       
+        <li>
+          <a href="#">
+            <img src="image/brand/sbs.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/tornado.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/ultra.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/white_whale.webp" alt="brand">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="image/brand/xiaomi.webp" alt="brand">
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- top sales 2  -->
+<!-- 
+<section class="offer-spcial">
+  <div class="container">
+
+   ____الاكثر مبيعاً____
+
+
+   
+
+    
+  </div>
+
+</section> -->
+
+<!-- top sales 3  -->
+
+<!-- 
+<section class="offer-spcial">
+  <div class="container">
+
+   ____أشهر المنتجات___
+
+
+   
+
+    
+  </div>
+
+</section> -->
+
+<!-- future  -->
+
+<section class="future">
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <img src="image/Picture_desktop_rtl.webp" alt="aa">
+      </div>
+    <div class="col-5 info-f">
+      <h2 class="red">Smart homes</h2>
+      <h2>عيش المستقبل</h2>
+      <p>جهز بيتك بأجهزة ذكية قبل أي حد</p>
+      <p>حصريًا من بي تك</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="#">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <!-- <span>Get connected with us on social networks:</span> -->
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="container text-end f-text">
+      <a href="tel:19966">
+        <h2>اتصل بنا</h2>
+        19966
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-end">
+            <i class="fas me-3 text-secondary"></i>بضمان بي تك
+          </h6>
+          <p class="text-end">
+            <a href="https://btech.com/ar/daily-deals/ultra.html">الترا</a>
+            <a href="https://btech.com/ar/daily-deals/ariston.html">أريستون</a>
+            <a href="https://btech.com/ar/daily-deals/indesit.html">إنديست</a>
+            <a href="https://btech.com/ar/daily-deals/babyliss.html">بيبي ليس</a>
+            <a href="https://btech.com/ar/daily-deals/miele.html">ميلا</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            عن بي.تك
+          </h6>
+          <p>
+            <a href="#" class="text-reset">اعمل معنا</a>
+          </p>
+          <p>
+            <li href="#!" class="text-reset" style="font-weight: bold;">خدمات بي تك</li>
+          </p>
+          <p>
+            <a href="minicash-info.html" class="text-reset">تقسيط الميني كاش</a>
+          </p>
+          <p>
+            <a href="t-care.html" class="text-reset">TECH CARE</a>
+          </p>
+          <p>
+            <a href="blog.html" class="text-reset">BLOG</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            عليه طلب
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">عروض كل يوم</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">الموبايل</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">عروض براون</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">تلفزيونات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">اكسسوارات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">أوبو</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">سامسونج</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">ابل</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">تواصل معنا</h6>
+          <p class="social-m">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>   
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>   
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>   
+
+          </p>
+          <p>
+            نزّل تطبيق بي.تك
+          </p>
+          <p class="d-flex app">
+            <a href="#">
+              <img src="image/sell/IOS.avif" alt="">
+            </a>
+            <a href="#">
+              <img src="image/sell/Google.avif" alt="">
+            </a>
+            <a href="#">
+              <img src="image/sell/Huawei.avif" alt="">
+            </a>
+
+            
+            </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://btech.com/">Btech</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+<!-- bootstrap js  -->
+<script src="js/bootstrap.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+<!-- main js  -->
+<script src="js/main.js"></script>
+
+
+<script src="js/changed.js"></script>
+
+
+</body>
+
+</html>

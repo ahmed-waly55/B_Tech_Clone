@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping checkout </title>
+    <!-- font aswome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normalize css  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- responsive degin  -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- bootstrap css  -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- link jquary  -->
+    <script src="js/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js"></script>
+
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+<style>
+  .btn-primary{
+    background-color: #f45b30;
+    border-color: #f45b30;
+  }
+  .btn-primary:hover{
+    background-color: #f45b30;
+    border-color: #f45b30;
+  }
+  .btn-primary:active{
+    background-color: #f45b30;
+    border-color: #f45b30;
+  }
+  .btn-primary:focus{
+    background-color: #f45b30;
+    border-color: #f45b30;
+  }
+</style>
+
+</head>
+<body>
+    
+  
+
+<!-- start header  -->
+
+  <section class="header">
+
+    <div class="header-top">
+    <div class="container">
+        <div class="h-left">
+          <a href="sell-on-btech.html">بيع علي بي تك</a>
+          <a href="tel:19966">
+            <i class="fa-solid fa-phone"></i>
+            اتصل علي 19966
+          </a>
+        </div>
+        <div class="h-right">
+          <div class="delivery" href="#">
+          
+            <span>القاهرة</span>
+            <span class="color-ddd"> : منطقة التوصيل </span>
+          </div>
+          <a href="#">
+            English
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container sr">
+
+
+      <div class="h-b-left">
+
+        <div class="sales">
+          <a href="checkout.html">مشترياتي 
+            <!-- <i class="fa-regular fa-cart-shopping"></i> -->
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+  
+  
+  
+  
+  
+  
+        <div class="acount">
+          
+          <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+            <a style="cursor: pointer;" onclick="document.getElementById('id01').style.display='block'">
+              حسابي
+              <i class="fa-regular fa-user"></i>
+            </a>
+          
+          <div id="id01" class="modal">
+        <!--     
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form> -->
+            <div class="form animated bounceInDown">
+              
+        <div class="flip-box ">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <div class="front">
+                    <h1 class="title log">Login</h1>
+                    <form>
+                                <input type="text" placeholder="Username" /><br>
+                                <input type="password" placeholder="Password" /><br>
+                                <input class="btn r-btn" type="button" value="Login"/>
+                    </form>
+                    <a class="flipbutton" id="loginButton" href="#" onclick="change(1);">Create my account →</a>
+                </div>
+                
+            </div>
+            <div class="flip-box-back">
+              
+          <div class="back">
+            <h1 class="title">Register</h1>
+            <form>
+                <input type="text" placeholder="Username" /><br>
+                <input type="text" placeholder="phone" /><br>
+                <input type="email" placeholder="Email" /><br>
+                <input type="password" placeholder="Password" /><br>
+                <input type="password" placeholder="conforim Password" /><br>
+                <input class="btn r-btn" type="button" value="Sign up"/>
+            </form>
+            <a class="flipbutton" id="registerButton"  href="#" onclick="change(0)">Login to my account →</a>
+          </div>
+            </div>
+          </div>
+        </div>
+            </div>
+        
+            
+          </div>
+            
+                </div>
+          
+  
+      </div>
+
+
+
+      <div class="serach">
+
+        <div class="container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="form-control" id="listSearch" type="text" placeholder="Type something to search list items">
+          <br>
+          <ul class="list-group" id="myList">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth item</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+        <div class="h-b-c-right">
+
+          <a class="color-danger" href="#">عروض كل يوم</a>
+
+          <ul class="category">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle menu" data-toggle="dropdown">فئات <b class="caret"></b></a>
+              <ul class="dropdown-menu multi-level">
+                  <!-- <li><a href="#">Level 1</a></li>       -->
+
+                  <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">موبايل و تابلت</a>
+                      <img class="image-size" src="image/Mobiles_and_tablets.webp" alt="">
+                      <!-- Level 2 -->
+                      <ul class="dropdown-menu">
+                          <li class="submm"><a href="#">Level 2</a></li>                                    
+                          <li class="dropdown-submenu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                              <!-- Level 3 -->
+                             
+                          </li>
+                      </ul>
+                  </li>
+
+
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> تلفزيونات</a>
+                    <img class="image-size" src="image/TV_Entertainment.webp" alt="">
+                    <!-- Level 2 -->
+                    <ul class="dropdown-menu">
+                        <li class="submm"><a href="#">Level 2</a></li>                                    
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                            <!-- Level 3 -->
+                           
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">اجهزة منزلية صغيرة</a>
+                  <img class="image-size" src="image/small_hope_appliances.webp" alt="">
+                  <!-- Level 2 -->
+                  <ul class="dropdown-menu">
+                      <li class="submm"><a href="#">Level 2</a></li>                                    
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                          <!-- Level 3 -->
+                         
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">اجهزة منزلية كبيرة</a>
+                <img class="image-size" src="image/Large_home_appliance.webp" alt="">
+                <!-- Level 2 -->
+                <ul class="dropdown-menu">
+                    <li class="submm"><a href="#">Level 2</a></li>                                    
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                        <!-- Level 3 -->
+                       
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">لاب توب و كمبيوتر</a>
+              <img class="image-size" src="image/Laptops_PCs.webp" alt="">
+              <!-- Level 2 -->
+              <ul class="dropdown-menu">
+                  <li class="submm"><a href="#">Level 2</a></li>                                    
+                  <li class="dropdown-submenu">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                      <!-- Level 3 -->
+                     
+                  </li>
+              </ul>
+          </li>
+
+          <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">اداوت العناية الشخصية</a>
+            <img class="image-size" src="image/Beauty_Fitness.webp" alt="">
+            <!-- Level 2 -->
+            <ul class="dropdown-menu">
+                <li class="submm"><a href="#">Level 2</a></li>                                    
+                <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                    <!-- Level 3 -->
+                   
+                </li>
+            </ul>
+        </li>
+
+        <li class="dropdown-submenu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">الكترونيات</a>
+          <img class="image-size" src="image/electronics.webp" alt="">
+          <!-- Level 2 -->
+          <ul class="dropdown-menu">
+              <li class="submm"><a href="#">Level 2</a></li>                                    
+              <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                  <!-- Level 3 -->
+                 
+              </li>
+          </ul>
+      </li>
+
+      <li class="dropdown-submenu">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> العاب</a>
+        <img class="image-size" src="image/gaming_1.webp" alt="">
+        <!-- Level 2 -->
+        <ul class="dropdown-menu">
+            <li class="submm"><a href="#">Level 02</a></li>                                    
+            <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 02</a>
+                <!-- Level 3 -->
+               
+            </li>
+        </ul>
+    </li>
+
+
+                <li class="dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">رياضة</a>
+                  <img class="image-size" src="image/ezgif-1-3533adc29e.webp" alt="">
+                  <!-- Level 2 -->
+                  <ul class="dropdown-menu">
+                      <li class="submm"><a href="#">Level 2</a></li>                                    
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2</a>
+                          <!-- Level 3 -->
+                         
+                      </li>
+                  </ul>
+              </li>
+
+
+
+              </ul>
+          </li>       
+
+
+
+          </ul>
+    
+
+        </div>
+     
+
+
+        <a href="index.html">
+          
+            <img src="image/new3.webp" alt="logo" class="logo">
+               </a>
+
+     <i class="fa-solid fa-bars toggle"></i>
+    </div>
+  </div>
+
+    
+  </section>
+  <!-- end header  -->
+
+
+  <section class="checkout">
+
+    <section class="h-100 gradient-custom">
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center my-4">
+            <div class="col-md-8">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h5 class="mb-0">Cart - 2 items</h5>
+                </div>
+                <div class="card-body">
+                  <!-- Single item -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Image -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+                          class="w-100" alt="Blue Jeans Jacket" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Image -->
+                    </div>
+      
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Data -->
+                      <p><strong>Blue denim shirt</strong></p>
+                      <p>Color: blue</p>
+                      <p>Size: M</p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                        title="Remove item">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                        title="Move to the wish list">
+                        <i class="fas fa-heart"></i>
+                      </button>
+                      <!-- Data -->
+                    </div>
+      
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantity -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+      
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
+                          <label class="form-label" for="form1">Quantity</label>
+                        </div>
+      
+                        <button class="btn btn-primary px-3 ms-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <!-- Quantity -->
+      
+                      <!-- Price -->
+                      <p class="text-start text-md-center">
+                        <strong>$17.99</strong>
+                      </p>
+                      <!-- Price -->
+                    </div>
+                  </div>
+                  <!-- Single item -->
+      
+                  <hr class="my-4" />
+      
+                  <!-- Single item -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Image -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
+                          class="w-100" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Image -->
+                    </div>
+      
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Data -->
+                      <p><strong>Red hoodie</strong></p>
+                      <p>Color: red</p>
+                      <p>Size: M</p>
+      
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                        title="Remove item">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                        title="Move to the wish list">
+                        <i class="fas fa-heart"></i>
+                      </button>
+                      <!-- Data -->
+                    </div>
+      
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantity -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+      
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
+                          <label class="form-label" for="form1">Quantity</label>
+                        </div>
+      
+                        <button class="btn btn-primary px-3 ms-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <!-- Quantity -->
+      
+                      <!-- Price -->
+                      <p class="text-start text-md-center">
+                        <strong>$17.99</strong>
+                      </p>
+                      <!-- Price -->
+                    </div>
+                  </div>
+                  <!-- Single item -->
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p><strong>Expected shipping delivery</strong></p>
+                  <p class="mb-0">12.10.2020 - 14.10.2020</p>
+                </div>
+              </div>
+              <div class="card mb-4 mb-lg-0">
+                <div class="card-body">
+                  <p><strong>We accept</strong></p>
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                    alt="Visa" />
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                    alt="American Express" />
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                    alt="Mastercard" />
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.webp"
+                    alt="PayPal acceptance mark" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h5 class="mb-0">Summary</h5>
+                </div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                      Products
+                      <span>$53.98</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                      Shipping
+                      <span>Gratis</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                      <div>
+                        <strong>Total amount</strong>
+                        <strong>
+                          <p class="mb-0">(including VAT)</p>
+                        </strong>
+                      </div>
+                      <span><strong>$53.98</strong></span>
+                    </li>
+                  </ul>
+      
+                  <a href="checkpay.html" type="button" class="btn btn-primary btn-lg btn-block">
+                    Go to checkout
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </section>
+
+<!-- 
+  <section class="s">
+    <section class="h-100 h-custom" style="background-color: #eee;">
+        <div class="container h-100 py-5">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card shopping-cart" style="border-radius: 15px;">
+                <div class="card-body text-black">
+      
+                  <div class="row">
+                    <div class="col-lg-6 px-5 py-4">
+      
+                      <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your products</h3>
+      
+                      <div class="d-flex align-items-center mb-5">
+                        <div class="flex-shrink-0">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/13.webp"
+                            class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                          <h5 class="text-primary">Samsung Galaxy M11 64GB</h5>
+                          <h6 style="color: #9e9e9e;">Color: white</h6>
+                          <div class="d-flex align-items-center">
+                            <p class="fw-bold mb-0 me-5 pe-3">799$</p>
+                            <div class="def-number-input number-input safari_only">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus"></button>
+                              <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                                type="number">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="d-flex align-items-center mb-5">
+                        <div class="flex-shrink-0">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/6.webp"
+                            class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                          <h5 class="text-primary">Headphones Bose 35 II</h5>
+                          <h6 style="color: #9e9e9e;">Color: Red</h6>
+                          <div class="d-flex align-items-center">
+                            <p class="fw-bold mb-0 me-5 pe-3">239$</p>
+                            <div class="def-number-input number-input safari_only">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus"></button>
+                              <input class="quantity fw-bold text-black" min="0" name="quantity" value="1"
+                                type="number">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="d-flex align-items-center mb-5">
+                        <div class="flex-shrink-0">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/1.webp"
+                            class="img-fluid" style="width: 150px;" alt="Generic placeholder image">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                          <a href="#!" class="float-end text-black"><i class="fas fa-times"></i></a>
+                          <h5 class="text-primary">iPad 9.7 6-gen WiFi 32GB</h5>
+                          <h6 style="color: #9e9e9e;">Color: rose pink</h6>
+                          <div class="d-flex align-items-center">
+                            <p class="fw-bold mb-0 me-5 pe-3">659$</p>
+                            <div class="def-number-input number-input safari_only">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="minus"></button>
+                              <input class="quantity fw-bold text-black" min="0" name="quantity" value="2"
+                                type="number">
+                              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+      
+                      <div class="d-flex justify-content-between px-x">
+                        <p class="fw-bold">Discount:</p>
+                        <p class="fw-bold">95$</p>
+                      </div>
+                      <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                        <h5 class="fw-bold mb-0">Total:</h5>
+                        <h5 class="fw-bold mb-0">2261$</h5>
+                      </div>
+      
+                    </div>
+                    <div class="col-lg-6 px-5 py-4">
+      
+                      <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+      
+                      <form class="mb-5">
+      
+                        <div class="form-outline mb-5">
+                          <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                            value="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                          <label class="form-label" for="typeText">Card Number</label>
+                        </div>
+      
+                        <div class="form-outline mb-5">
+                          <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                            value="John Smith" />
+                          <label class="form-label" for="typeName">Name on card</label>
+                        </div>
+      
+                        <div class="row">
+                          <div class="col-md-6 mb-5">
+                            <div class="form-outline">
+                              <input type="text" id="typeExp" class="form-control form-control-lg" value="01/22"
+                                size="7" id="exp" minlength="7" maxlength="7" />
+                              <label class="form-label" for="typeExp">Expiration</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-5">
+                            <div class="form-outline">
+                              <input type="password" id="typeText" class="form-control form-control-lg"
+                                value="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                              <label class="form-label" for="typeText">Cvv</label>
+                            </div>
+                          </div>
+                        </div>
+      
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit <a
+                            href="#!">obcaecati sapiente</a>.</p>
+      
+                        <button type="button" class="btn btn-primary btn-block btn-lg">Buy now</button>
+      
+                        <h5 class="fw-bold mb-5" style="position: absolute; bottom: 0;">
+                          <a href="#!"><i class="fas fa-angle-left me-2"></i>Back to shopping</a>
+                        </h5>
+      
+                      </form>
+      
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section> -->
+
+    
+<section class="ddfdf">
+
+  <div class="container">
+    
+  </div>
+</section>
+
+  
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-black text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <!-- <span>Get connected with us on social networks:</span> -->
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="container text-end f-text">
+      <a href="tel:19966">
+        <h2>اتصل بنا</h2>
+        19966
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-end">
+            <i class="fas me-3 text-secondary"></i>بضمان بي تك
+          </h6>
+          <p class="text-end">
+            <a href="https://btech.com/ar/daily-deals/ultra.html">الترا</a>
+            <a href="https://btech.com/ar/daily-deals/ariston.html">أريستون</a>
+            <a href="https://btech.com/ar/daily-deals/indesit.html">إنديست</a>
+            <a href="https://btech.com/ar/daily-deals/babyliss.html">بيبي ليس</a>
+            <a href="https://btech.com/ar/daily-deals/miele.html">ميلا</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            عن بي.تك
+          </h6>
+          <p>
+            <a href="#" class="text-reset">اعمل معنا</a>
+          </p>
+          <p>
+            <li href="#!" class="text-reset" style="font-weight: bold;">خدمات بي تك</li>
+          </p>
+          <p>
+            <a href="minicash-info.html" class="text-reset">تقسيط الميني كاش</a>
+          </p>
+          <p>
+            <a href="t-care.html" class="text-reset">TECH CARE</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            عليه طلب
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">عروض كل يوم</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">الموبايل</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">عروض براون</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">تلفزيونات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">اكسسوارات</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">أوبو</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">سامسونج</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">ابل</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-end">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">تواصل معنا</h6>
+          <p class="social-m">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>   
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>   
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>   
+
+          </p>
+          <p>
+            نزّل تطبيق بي.تك
+          </p>
+          <p class="d-flex app">
+            <a href="#">
+              <img src="image/sell/IOS.avif" alt="">
+            </a>
+            <a href="#">
+              <img src="image/sell/Google.avif" alt="">
+            </a>
+            <a href="#">
+              <img src="image/sell/Huawei.avif" alt="">
+            </a>
+
+            
+            </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://btech.com/">Btech</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  
+<!-- bootstrap js  -->
+<script src="js/bootstrap.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+<!-- main js  -->
+<script src="js/main.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+.header{
+    height: 70px;
+}
+.h-right {
+    display: flex;
+    }
+    .h-right {
+    display: flex;
+    align-items: center;
+}
+.nav{
+  flex-direction: row-reverse;
+}
+.nav li{
+  padding: 10px;
+  list-style: none;
+}
+.nav li a{
+  color: black;
+  text-decoration: none;
+}
+.btn{
+  background-color: #0066BE;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 14px;
+
+}
+.btn:hover{
+  background-color: none !important;
+  color: white !important;
+}
+.logo{
+  margin-left: 30px;
+}
+
+.info .container{
+    background-color: #0066BE;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.info .container .ph{
+    width: 525px;
+    height: 350px;
+    left: 0;
+    background-size: cover;
+    position: absolute;
+}
+.info .info-t{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .container .head{
+    color: white;
+    width: 450px;
+    right: 0;
+    margin-left: 100px;
+    /* position: absolute; */
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button a{
+    width: 150px;
+    margin: 10px;
+}
+.button .btn-2{
+    color: black;
+
+}
+.button .btn-2:hover{
+    color: black !important;
+}
+a:active{
+    text-decoration: underline !important;
+}
+a.btn.btn-1 {
+    margin-right: 50px;
+    background-color: blue;
+    width: 115px;
+}
+.button .btn-1:hover{
+    background-color: black !important;
+}
+.story{
+    margin: 20px 0;
+}
+.story .content-s{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    direction: rtl;
+    /* margin-top: 10px; */
+}
+
+.story .content-s .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row-reverse; */
+    
+}
+.story h1{
+    text-align: center;
+}
+.story .markk{
+    color: red;
+}
+.c-story{
+    padding-top: 10px;
+    height: 200px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    margin: 10px;
+
+
+}
+.one{
+    background-image: url(../image/sell/1.png);
+}
+.two{
+    background-image: url(../image/sell/2.avif);
+}
+.three{
+    background-image: url(../image/sell/3.avif);
+}
+/* body{
+    height: 2000px;
+} */
+
+.steps .content-st img{
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    /* text-align: end; */
+}
+.steps .content-st{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    text-align: end;
+    flex-direction: row-reverse;
+    /* padding: 10px; */
+}
+.steps .content-st div{
+    margin: 10px;
+}
+.steps .content-st h1{
+    font-size: 20px;
+}
+
+.features .container{
+    background-color: #0066BE;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+    line-height: 4;
+}
+.features .container .btn-2{
+    background-color: white;
+    color: black;
+    width: 180px;
+}
+.features .container .btn-2:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* footer  */
+
+
+footer{
+    background-color: var(--footer-color--) !important;
+  }
+  
+  
+  .f-text a , h2{
+    color: white;
+  }
+  .mt-3{
+    direction: rtl;
+  }
+  p.text-end {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+  }
+  p.text-end a{
+    color: #ddd;
+    padding: 5px;
+  }
+  p.text-end a:hover{
+    color: white;
+  }
+  .app{
+    justify-content: center;
+    align-items: center;
+  }
+  .app img{
+    width: 85px;
+    margin: 10px;
+  }
+  .social-m a{
+    padding: 20px;
+  }
+  .social-m i{
+    font-size: 25px;
+    color: white;
+  }
+
+  footer{
+    margin-top: 40px;
+    background-color: #0e001a !important;
+  }
+  footer a , li , ul{
+    list-style: none;
+    text-decoration: none;
+  }
